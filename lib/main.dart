@@ -46,7 +46,7 @@ class _MainPageState extends State<MainPage> {
       body: new Stack(
         children: <Widget>[
           _buildTimeline(),
-          _buildIamge(),
+          _buildImage(),
           _buildTopHeader(),
           _buildProfileRow(),
           _buildBottomPart(),
@@ -76,7 +76,7 @@ class _MainPageState extends State<MainPage> {
     });
   }
 
-  Widget _buildIamge() {
+  Widget _buildImage() {
     return new Positioned.fill(
       bottom: null,
       child: new ClipPath(
@@ -86,7 +86,7 @@ class _MainPageState extends State<MainPage> {
           fit: BoxFit.cover,
           height: _imageHeight,
           colorBlendMode: BlendMode.srcOver,
-          color: new Color.fromARGB(120, 20, 10, 40),
+          color: new Color.fromARGB(30, 50, 10, 40),
         ),
       ),
     );
